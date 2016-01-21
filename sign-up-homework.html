@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+          <h3>Fill in the information below to be in the running for a spot!</h3>
+          <p>Do you believe that you are the perfect canidate for a one way mission to Mars? Let us know why! </p>
+          <p>We are currently seeking 50 people to join us on this exciting journey!</p>
+			<!-- A Simple Form    -->
+          <form id="sign-up-form" method="post" action="#">
+            <fieldset>
+              <h2>Mission to Mars ~ Canidate Form</h2>
+              <ul>
+                <li>
+                  <label for="name-label">Full Name:</label>
+                  <input type="text" name="name" id="name-label" placeholder="Full Name" required autofocus />
+                </li>
+                
+                <li>
+                  <label for="age-label">Age (Must be 18-45):</label>
+                  <input type="number" name="age" id="age-label" placeholder="18" min="18" max="45"/>
+                </li>
+                
+                <li>
+                  <label for="phone-label">Phone Number:</label>
+                  <input type="tel" name="phone-number" id="phone-label" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="222-222-2222" required />
+                </li>
+                
+                <li>
+                  <label for="email-label">Valid Email Address:</label>
+                  <input type="email" name="email" id="email-label" placeholder="Email Address" />
+                </li>
+                
+                <li>
+                  <label for="education-label">Highest Level of Education Achieved:</label> <br>
+                  <input type="radio" name="education" id="education-label" value="High School Graduate/GED" required/> High School Graduate/GED <br>
+                  <input type="radio" name="education" id="education-label" value="Associate's Degree" /> Associate's Degree <br>
+                  <input type="radio" name="education" id="education-label" value="Bachelor's Degree" /> Bachelor's Degree <br>
+                  <input type="radio" name="education" id="education-label" value="Master's Degree" /> Master's Degree <br>
+                  <input type="radio" name="education" id="education-label" value="PhD" /> PhD <br> 
+                  <input type="radio" name="education" id="education-label" value="Other" /> Other <br>
+                  
+                  <label for="other-education-label">If other, please specify:</label>
+                  <input type="text" name="other-education" id="other-education-label" placeholder="Other Education"/>
+                </li>
+                
+                <li>
+                  <label for="allergies-label"> List allergies and past injuries you have had (200 character max):</label>
+                  <input type="text" name="allergies" id="allergies-label" placeholder="Allergies and Injuries" maxlength="200" required />
+                </li>
+                
+                <li>
+                  <label for="traits-label">Check all that apply to you:</label> <br>
+                  <input type="checkbox" name="traits" id="traits-label" value="Claustrophobia" /> Gah! Small spaces and lots of people are a no go!<br>
+                  <input type="checkbox" name="traits" id="traits-label" value="People problems" /> Feeling comfortable around new people is very difficult <br>
+                  <input type="checkbox" name="traits" id="traits-label" value="Anger" /> Anger and emotions are hard to control <br>
+                  <input type="checkbox" name="traits" id="traits-label" value="Motion sickness" /> Motion sickness... *bleh* 
+                </li>
+                
+                <li>
+                  <label for="intro-vid-label">Please upload a short introduction video to YouTube and include the link here! This is the best way for us to get to know you so please include why you want to go to Mars, why YOU should be chosen, and any other info that you think is important (please keep it under 5 minutes, include http:// in the url): </label>
+                  <input type="url" name="intro-vid" id="intro-vid-label"  placeholder="Video URL" required/>
+                </li>
+              </ul>
+      
+              <input type="submit" value="Submit Answers" name="submit"/>
+            </fieldset>
+          </form>
+          <p>Thank you for participating in this program! </p>
+          <p>Emails will be sent within two weeks after the deadline of the application has passed. Once chosen from the pool, all candidates are REQUIRED to process a background check before becoming completely eligible.</p>
+            
+            	
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+			
+		</footer>
+
+	</body>
+</html>
